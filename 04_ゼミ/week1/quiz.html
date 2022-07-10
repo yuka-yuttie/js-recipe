@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WebExpertコーステンプレート</title>
+  </head>
+  <body>
+    <h2 id="question">問題 今受けているコースは何でしょう？</h2>
+    <div><button id="expert">WebExpert</button></div>
+    <div><button id="web">Web</button></div>
+    <div><button id="Python">Python</button></div>
+    <script>
+      const expertButton = document.getElementById("expert");
+      const webButton = document.getElementById("web");
+      const PythonButton = document.getElementById("Python");
+      const question = document.getElementById("question");
+      expertButton.onclick = function () {
+        question.textContent = "正解";
+      };
+      webButton.onclick = function () {
+        question.textContent = "不正解";
+      };
+      PythonButton.onclick = function () {
+        question.textContent = "不正解";
+      };
+    </script>
+  </body>
+</html>
